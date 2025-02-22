@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>草野球チーム - 連絡先</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <header>
+    <h1>草野球チーム</h1>
+    <nav>
+      <ul>
+        <!-- "index" フォルダの index.html へ移動 -->
+        <li><a href="../index/index.html">チーム概要</a></li>
+        <!-- "members" フォルダの members.html へ移動 -->
+        <li><a href="../members/members.html">メンバー紹介</a></li>
+        <!-- "records" フォルダの records.html へ移動 -->
+        <li><a href="../records/records.html">戦績</a></li>
+        <!-- 同じフォルダ (contact) の contact.html はそのまま -->
+        <li><a href="contact.html">連絡先</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>お問い合わせ</h2>
+      <p>メンバー募集や対戦依頼など、お気軽にご連絡ください。</p>
+      
+      <!-- シンプルなお問い合わせフォーム例 -->
+      <form id="contact-form">
+        <label for="name">お名前：</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">メールアドレス：</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">お問い合わせ内容：</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+        <button type="submit">送信</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 草野球チーム</p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

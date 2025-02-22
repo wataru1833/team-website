@@ -1,0 +1,106 @@
+/* ページ全体のベース */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #ffffff; /* 白をベースにしつつアクセントで緑や黄を使う */
+  color: #333;
+}
+
+/* ヘッダー */
+header {
+  background-color: #008000; /* 緑色（お好みで #006400 や #009B3A に変更可） */
+  color: #FFD700;            /* 黄色系文字 */
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* ナビゲーションメニュー */
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+/* リンクの色を黄色系にしてボタン風に。ホバー時に少し透過させる */
+nav a {
+  display: inline-block;       /* 幅と高さを確保できるようブロック化 */
+  background-color: #FFD700;   /* 黄色の背景 */
+  color: #008000;              /* 緑文字 */
+  padding: 8px 16px;
+  margin: 0 4px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+nav a:hover {
+  opacity: 0.8;                /* ホバー時に少し透過 */
+}
+
+/* メインコンテンツ */
+main {
+  padding: 20px;
+}
+
+/* 見出し（例：h2など）に緑を使ってアクセント */
+main h2 {
+  color: #008000;  /* 緑色の文字 */
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  color: #333;
+}
+
+/* ----------- 以下、メンバー紹介（カードレイアウト）用のCSS ----------- */
+
+/* メンバー一覧をまとめるコンテナ */
+.members-container {
+  display: flex;        /* フレックスレイアウト */
+  flex-wrap: wrap;      /* 幅が足りない場合に折り返す */
+  gap: 20px;            /* カード同士の余白 */
+  justify-content: center; /* カードを中央寄せ */
+  padding: 20px;
+}
+
+/* 個々のメンバーカード */
+.member-card {
+  width: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  padding: 10px;
+}
+
+/* メンバーの写真 */
+.member-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* メンバー名をやや強調 */
+.member-card h3 {
+  margin: 10px 0 5px;
+  color: #008000; /* 緑色で統一感 */
+}
+
+/* プロフィール文 */
+.member-card p {
+  margin: 5px 0;
+}
