@@ -5,24 +5,29 @@
   <meta charset="UTF-8">
   <title>草野球チーム - チーム概要</title>
   <!-- CSSファイルを読み込む -->
+  <!-- パスはご自身のフォルダ構成に合わせて修正してください -->
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+
+  <!-- ★ 画面全体を覆うオーバーレイを最初に配置 -->
+  <div class="full-screen-overlay">
+    <img src="../images/canary.gif" alt="カナリア" />
+  </div>
+
   <!-- ヘッダー -->
   <header>
     <h1>草野球チーム カナリア軍団</h1>
-    <!-- index/index.html のナビゲーション例 -->
     <nav>
       <ul>
-        <!-- 同じフォルダの index.html 自体を指すなら "./index.html" でも可 -->
+        <!-- 自分自身（トップページ） -->
         <li><a href="index.html">チーム概要</a></li>
-        <!-- 1つ上の階層に戻る: "../" → members/ フォルダ → members.html -->
+        <!-- 1つ上に戻って別フォルダへ移動 -->
         <li><a href="../members/members.html">メンバー紹介</a></li>
         <li><a href="../records/records.html">戦績</a></li>
         <li><a href="../contact/contact.html">連絡先</a></li>
       </ul>
     </nav>
-        
   </header>
 
   <!-- メインコンテンツ（チーム概要） -->
@@ -40,7 +45,7 @@
     <p>&copy; 2025 カナリア軍団</p>
   </footer>
 
-  <!-- JavaScriptファイルを読み込む -->
+  <!-- JavaScriptファイルを読み込む（必要に応じて） -->
   <script src="../js/main.js"></script>
 </body>
 </html>
